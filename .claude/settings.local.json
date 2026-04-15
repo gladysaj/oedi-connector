@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cat)",
+      "Read(//tmp/**)",
+      "Bash(npx tsc:*)",
+      "Bash(node_modules/.bin/tsc --noEmit)",
+      "Bash(echo \"EXIT:$?\")",
+      "Bash(az account:*)"
+    ]
+  }
+}

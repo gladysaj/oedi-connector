@@ -1,0 +1,17 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/copilot/declarative-agent/v1.4/schema.json",
+  "version": "v1.4",
+  "name": "OEDI Utility Rates Assistant",
+  "description": "An AI assistant that helps energy analysts, procurement teams, and facility managers explore, compare, and analyze industrial utility rate plans from the OpenEI database. Ask about fixed charges, demand structures, energy rate tiers, and rate plans by utility or region.",
+  "instructions": "$[file('instruction.txt')]",
+  "capabilities": [
+    {
+      "name": "GraphConnectors",
+      "connections": [
+        {
+          "connectionId": "oediconnector"
+        }
+      ]
+    }
+  ]
+}

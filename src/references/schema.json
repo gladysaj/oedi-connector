@@ -1,0 +1,87 @@
+{
+  "baseType": "microsoft.graph.externalItem",
+  "properties": [
+    {
+      "name": "title",
+      "type": "String",
+      "isSearchable": true,
+      "isQueryable": true,
+      "isRetrievable": true,
+      "labels": ["title"]
+    },
+    {
+      "name": "utility",
+      "type": "String",
+      "isSearchable": true,
+      "isQueryable": true,
+      "isRetrievable": true,
+      "isRefinable": true
+    },
+    {
+      "name": "sector",
+      "type": "String",
+      "isSearchable": true,
+      "isQueryable": true,
+      "isRetrievable": true,
+      "isRefinable": true
+    },
+    {
+      "name": "country",
+      "type": "String",
+      "isSearchable": true,
+      "isQueryable": true,
+      "isRetrievable": true,
+      "isRefinable": true
+    },
+    {
+      "name": "fixedcharge",
+      "type": "Double",
+      "isQueryable": true,
+      "isRetrievable": true,
+      "isRefinable": true
+    },
+    {
+      "name": "demandunit",
+      "type": "String",
+      "isQueryable": true,
+      "isRetrievable": true,
+      "isRefinable": true
+    },
+    {
+      "name": "startdate",
+      "type": "DateTime",
+      "isQueryable": true,
+      "isRetrievable": true,
+      "labels": ["createdDateTime"]
+    },
+    {
+      "name": "source",
+      "type": "String",
+      "isSearchable": true,
+      "isRetrievable": true,
+      "labels": ["url"]
+    },
+    {
+      "name": "iconUrl",
+      "type": "String",
+      "isSearchable": true,
+      "isRetrievable": true,
+      "labels": ["iconUrl"]
+    },
+    {
+      "name": "lastModifiedBy",
+      "type": "String",
+      "isSearchable": true,
+      "isQueryable": true,
+      "isRetrievable": true,
+      "labels": ["lastModifiedBy"]
+    },
+    {
+      "name": "lastModifiedDateTime",
+      "type": "DateTime",
+      "isQueryable": true,
+      "isRetrievable": true,
+      "labels": ["lastModifiedDateTime"]
+    }
+  ]
+}

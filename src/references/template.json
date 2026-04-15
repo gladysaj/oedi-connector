@@ -1,0 +1,60 @@
+{
+  "type": "AdaptiveCard",
+  "version": "1.3",
+  "body": [
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "width": "auto",
+          "items": [
+            {
+              "type": "Image",
+              "url": "https://searchuxcdn.blob.core.windows.net/designerapp/images/DefaultMRTIcon.png",
+              "size": "Small",
+              "horizontalAlignment": "Center",
+              "altText": "Result logo"
+            }
+          ],
+          "height": "stretch"
+        },
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "${title}",
+              "color": "Accent",
+              "size": "Medium",
+              "weight": "Bolder"
+            },
+            {
+              "type": "TextBlock",
+              "text": "**${utility}** | ${sector} | ${country}",
+              "spacing": "Small",
+              "$when": "${utility != ''}"
+            },
+            {
+              "type": "TextBlock",
+              "text": "Fixed Charge: ${fixedcharge} | Demand Unit: ${demandunit}",
+              "wrap": true,
+              "maxLines": 3,
+              "spacing": "Medium"
+            },
+            {
+              "type": "TextBlock",
+              "text": "Source: ${source}",
+              "spacing": "Small",
+              "$when": "${source != ''}"
+            }
+          ],
+          "horizontalAlignment": "Center",
+          "spacing": "Medium"
+        }
+      ]
+    }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json"
+}
